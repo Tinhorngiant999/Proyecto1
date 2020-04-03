@@ -1,0 +1,24 @@
+<h1>Detallas sobre el libro buscado</h1>
+<body style="background-color:#a9e9c0;">
+    <table>
+        <tr>
+        <td>Isbn</td><br>
+        <td>Titulo</td>
+        <td>Autor</td>
+        <td>Año</td>
+        </tr>
+    
+        {% for libro in libro_autor %}
+        <!-- {{ elemento }} -->
+    
+            <tr>
+            <td>{{libro.isbn}}</td>
+            <td>{{libro.title}}</td>
+            <td>{{libro.author}}</td>
+            <td>{{libro.year}}</td>
+            </tr>
+
+        {% endfor %}
+    </table>
+</body>
+<!-- <h1>{{libro_autor}}</h1> -->
